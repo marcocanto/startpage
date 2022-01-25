@@ -1,7 +1,7 @@
 function getTime() {
 	var today = new Date();
 	var time =
-		today.getHours() + ':' + today.getMinutes() + ':' + ("0" + today.getSeconds;
+		today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds();
 	document.getElementById('currentTime').innerHTML = time;
 }
 
