@@ -24,12 +24,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1em;
+    gap: 4rem;
 
 }
 
 .links {
-    width: 150px;
+    width: 100px;
     display: flex;
     flex-direction: column;
     color: white;

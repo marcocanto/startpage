@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>startpage</title>
     <link rel="stylesheet" href="output.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -16,10 +16,7 @@
             <div id="currentTime"></div>
         </div>
         <div id="search-box">
-            <form method="get" name="search" action="https://www.duckduckgo.com/"
-                onsubmit="this.submit(); this.reset(); return false;">
-                <input id="search" type="text" placeholder="Search DuckDuckGo" autofocus="autofocus" name="q" />
-            </form>
+            <input id="search" type="text" autofocus name="q" />
         </div>
         <div id="link-container">
             <div class="links">
