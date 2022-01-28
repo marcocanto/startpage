@@ -37,7 +37,7 @@ function processSearch() {
 			);
 			break;
 		default:
-			location.assign('https://duckduckgo.com/?q=' + search);
+			location.assign('https://duckduckgo.com/?q=' + query);
 	}
 }
 
