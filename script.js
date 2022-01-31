@@ -3,7 +3,7 @@ function getTime() {
 	var time =
 		today.getHours() +
 		':' +
-		today.getMinutes() +
+		('0' + today.getMinutes()).slice(-2) +
 		':' +
 		('0' + today.getSeconds()).slice(-2);
 	document.getElementById('currentTime').innerHTML = time;
