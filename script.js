@@ -1,11 +1,35 @@
+const weekday = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+const month = [
+	'January',
+	'February',
+	'March',
+	'April',
+	'May',
+	'June',
+	'July',
+	'August',
+	'September',
+	'October',
+	'November',
+	'December',
+];
+
 function getTime() {
-	var today = new Date();
-	var time =
+	const today = new Date();
+	const time =
 		today.getHours() +
 		':' +
 		('0' + today.getMinutes()).slice(-2) +
 		':' +
 		('0' + today.getSeconds()).slice(-2);
+	const date =
+		weekday[today.getDay()] +
+		', ' +
+		month[today.getMonth()] +
+		' ' +
+		today.getDate();
+
+	document.getElementById('currentDate').innerHTML = date;
 	document.getElementById('currentTime').innerHTML = time;
 }
 

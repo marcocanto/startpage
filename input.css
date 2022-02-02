@@ -23,12 +23,12 @@ body {
     display: flex;
     justify-content: center;
     width: fit-content;
-    border: 1px solid #5b7b65;
+    border: 2px solid #86acb9;
 }
 
 #img {
-    height:300px;
-    width: 300px;
+    height:250px;
+    width: 250px;
     object-fit: cover;
     margin-right: 20px;
 }
@@ -61,10 +61,12 @@ body {
     background: transparent;
     color: white;
     padding-bottom: 2px;
+
 }
 
 #search-box {
-    border-bottom: 1px solid #5b7b65 !important;
+    border-bottom: 2px solid #86acb9 !important;
+    margin-bottom: 20px;
 }
 
 #search:focus {
@@ -74,14 +76,15 @@ body {
 
 .title {
     font-weight: 500;
+    color: #8ec7da
 }
 
 a:hover {
-    color: #5b7b65;
+    color: #86acb9;
 }
 
-#currentTime {
-    font-size: 18px;
+#timeline {
+    font-size: 16px;
     font-weight: 400;
     color: white
 }
