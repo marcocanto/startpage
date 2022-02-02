@@ -11,6 +11,24 @@ function getTime() {
 
 setInterval(getTime, 1000);
 
+function success(position) {
+	console.log(position.coords.latitude, position.coords.longitude);
+}
+
+const options = {
+	enableHighAccuracy: true,
+	timeout: 5000,
+	maximumAge: 0,
+};
+
+if (navigator.geolocation) {
+	const curPos = navigator.geolocation.getCurrentPosition(
+		success,
+		null,
+		options
+	);
+}
+
 function processSearch() {
 	const query = document.querySelector('#search').value;
 	const split = query.split(' ');

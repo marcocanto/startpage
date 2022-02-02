@@ -6,25 +6,46 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: #333;
-    font: 14px "Fira Code"
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+#main {
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #container {
-    width: 100%;
-    height: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin-top: -5%;
-    gap: 2em;
+    width: fit-content;
+    border: 1px solid #5b7b65;
+}
+
+#img {
+    height:300px;
+    width: 300px;
+    object-fit: cover;
+    margin-right: 20px;
 }
 
 #link-container {
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 4rem;
+
+}
+
+#content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: .5rem;
+    padding: 1rem;
 
 }
 
@@ -37,27 +58,30 @@ body {
 
 #search {
     width: 450px;
-    padding: 3px 5px;
-    border-radius: 5px; 
     background: transparent;
-    border: 1px solid white !important;
     color: white;
+    padding-bottom: 2px;
+}
 
+#search-box {
+    border-bottom: 1px solid #5b7b65 !important;
 }
 
 #search:focus {
-    outline: 1px solid rgb(153, 197, 182) !important;
+    outline: none;
 }
 
+
 .title {
-    font-weight: bold;
+    font-weight: 500;
 }
 
 a:hover {
-    color:rgb(153, 197, 182);
+    color: #5b7b65;
 }
 
 #currentTime {
-    font-size: 24px;
+    font-size: 18px;
+    font-weight: 400;
     color: white
 }
