@@ -32,7 +32,7 @@
                         <a
                             href="https://www.theodinproject.com/paths/foundations/courses/foundations">theodinproject</a>
                         <a href="https://github.com/marcocanto">github</a>
-                        <a href="https://linkedin.com/marcocanto3">linkedin</a>
+                        <a href="https://monkeytype.com/">monkeytype</a>
                     </div>
                     <div class="links">
                         <div class="title">Work</div>
@@ -53,7 +53,17 @@
         <div class="quote text-white">
             <div id="quote-body"></div>
             <div id="author"></div>
-            <script>getQuote()</script>
+            <script>getQuote()
+
+                const query = document.querySelector('#search-box');
+
+                query.addEventListener('keydown', (event) => {
+                    if (event.keyCode === 13) {
+                        console.log();
+                        processSearch();
+                    }
+                });
+            </script>
         </div>
     </div>
 </body>

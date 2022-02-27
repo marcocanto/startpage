@@ -87,15 +87,6 @@ function processSearch() {
 	}
 }
 
-const query = document.querySelector('#search-box');
-
-query.addEventListener('keydown', (event) => {
-	if (event.keyCode === 13) {
-		console.log();
-		processSearch();
-	}
-});
-
 function getQuote() {
 	const quote = document.querySelector('#quote-body');
 	const author = document.querySelector('#author');
