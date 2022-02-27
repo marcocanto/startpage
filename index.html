@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>New tab</title>
     <link rel="stylesheet" href="output.css" />
-    <script src="script.js" defer></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
-    <div id="main">
+    <div id="main" class="flex flex-col">
         <div id="container">
             <div id=image-wrapper>
                 <img id=img src="imgs/waterfall.jpg" alt="waterfall image">
@@ -20,6 +20,7 @@
                 <div id="timeline">
                     <div id="currentDate">0:00:00</div>
                     <div id="currentTime">0:00:00</div>
+                    <script type="text/javascript">getTime()</script>
                 </div>
                 <div id="search-box">
                     <input id="search" type="text" autofocus name="q" />
@@ -34,21 +35,25 @@
                         <a href="https://linkedin.com/marcocanto3">linkedin</a>
                     </div>
                     <div class="links">
-                        <div class="title">School</div>
-                        <a href="https://canvas.eee.uci.edu/">canvas</a>
+                        <div class="title">Work</div>
+                        <a href="https://gmail.com/mail/u/0/#inbox">gmail</a>
                         <a href="https://drive.google.com/">drive</a>
-                        <a href="https://www.ics.uci.edu/~givargis/courses/cs145/">cs145</a>
-                        <a href="https://www.ics.uci.edu/~wayne/courses/cs146/">cs146</a>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/Guide">MDN Docs</a>
                     </div>
                     <div class="links">
                         <div class="title">Social</div>
                         <a href="https://youtube.com">youtube</a>
                         <a href="https://twitch.tv/following">twitch</a>
-                        <a href="https://reddit.com/r/superstonk">reddit</a>
+                        <a href="https://reddit.com/">reddit</a>
                         <a href="https://linkedin.com/marcocanto3">linkedin</a>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="quote text-white">
+            <div id="quote-body"></div>
+            <div id="author"></div>
+            <script>getQuote()</script>
         </div>
     </div>
 </body>

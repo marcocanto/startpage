@@ -95,3 +95,15 @@ query.addEventListener('keydown', (event) => {
 		processSearch();
 	}
 });
+
+function getQuote() {
+	const quote = document.querySelector('#quote-body');
+	const author = document.querySelector('#author');
+	fetch('https://stoicquotesapi.com/v1/api/quotes/random')
+		.then((response) => response.json())
+		.then((data) => {
+			author.innerHTML = ` - ${data.author}`;
+			quote.innerHTML = `"${data.body}"`;
+			console.log(data.author);
+		});
+}
